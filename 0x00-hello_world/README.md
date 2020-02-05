@@ -1,0 +1,1 @@
+This project is an introducion to the C language of promgramming.
