@@ -1,0 +1,1 @@
+This reporsitory contains some examples of scripts that can be run for c language programming.
