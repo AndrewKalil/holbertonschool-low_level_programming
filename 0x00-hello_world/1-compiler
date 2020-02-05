@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S $CFILE | find *.o
+gcc -c $CFILE 
