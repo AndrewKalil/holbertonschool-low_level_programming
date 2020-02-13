@@ -9,7 +9,7 @@ void more_numbers(void)
 	char num;
 	int TenTimes;
 
-	for (TenTimes = 48; TenTimes < 57; TenTimes++)
+	for (TenTimes = 48; TenTimes <= 57; TenTimes++)
 	{
 		for (num = 0; num < 15; num++)
 		{
