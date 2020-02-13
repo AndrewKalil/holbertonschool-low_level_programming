@@ -1,31 +1,37 @@
 #include "holberton.h"
 
 /**
- * print_triangle - draws a triangle
+ * print_triangle - prints diagonal lines as many times
+ * is input as the number that
  * @size: integer to be used
  */
 void print_triangle(int size)
 {
-	if (size <= 0)
-	{
-		_putchar('\n');
-	}
-	else
-	{
-		int T;
-		int S;
+	int a;
+	int b;
+	int c;
 
-		for (T = 1; T <= size; T++)
+	if (size > 0)
+	{
+		for (a = 0; a < size; a++)
 		{
-			for (S = T; S < size; S++)
+			for (b = 0; b < size; b++)
 			{
-				_putchar(' ');
-			}
-			for (S = 1; S <= T; S++)
-			{
-				_putchar('#');
+				c = (size - a) - 1;
+				if (b < c)
+				{
+					_putchar(' ');
+				}
+				else
+				{
+					_putchar('#');
+				}
 			}
 			_putchar('\n');
 		}
+	}
+	else
+	{
+		_putchar('\n');
 	}
 }
