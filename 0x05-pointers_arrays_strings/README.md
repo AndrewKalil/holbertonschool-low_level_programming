@@ -1,0 +1,1 @@
+#This file contains task for 0x05-pointers_arrays_strings directory of Holberton.#
