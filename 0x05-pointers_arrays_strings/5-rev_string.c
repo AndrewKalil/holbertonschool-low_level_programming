@@ -15,10 +15,10 @@ void rev_string(char *s)
 		len++;
 
 	for (a = 0; a < len; a++)
-		{
-			c = s[a];
-			s[a] = s[len - 1];
-			s[len - 1] = c;
-			len--;
-		}
+	{
+		c = s[a];
+		s[a] = s[len - 1];
+		s[len - 1] = c;
+		len--;
+	}
 }
