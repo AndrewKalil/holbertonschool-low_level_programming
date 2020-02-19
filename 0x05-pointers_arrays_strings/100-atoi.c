@@ -28,10 +28,10 @@ int _atoi(char *s)
 
 		{
 			num = (s[i] - '0') + num * 10;
-			if (s[1 +1] == ' ')
-			{
-				break;
-			}
+		}
+		if (s[i + 1] == ' ')
+		{
+			break;
 		}
 		else if (s[i] == '-')
 		{
