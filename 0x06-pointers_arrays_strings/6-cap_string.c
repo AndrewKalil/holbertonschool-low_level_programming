@@ -18,41 +18,28 @@ int _isalphalower(int c)
  */
 char *cap_string(char *s)
 {
-	int pos;
+	int i;
+	int j;
 
-	for (pos = 0; s[pos] != '\0'; pos++)
+	char sym[13] = {' ', '\t', '\n', ',', ';', '.',
+		'!', '?', '"', '(', ')', '{', '}'};
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[pos] == 44 || s[pos] == 59 || s[pos] == 46)
-		{
-			pos++;
-			if (_isalphalower(s[pos]))
-				s[pos] -= 32;
-		}
-		if (s[pos] == 33 || s[pos] == 63 || s[pos] == 34)
-		{
+		if (i == 0 && _isalphalower(s[i]))
+			s[i] -= 32;
 
-			pos++;
-			if (_isalphalower(s[pos]))
-				s[pos] -= 32;
-		}
-		if (s[pos] == 40 || s[pos] == 41 || s[pos] == 123)
+		for (j = 0; j < 13; j++)
 		{
-			pos++;
-			if (_isalphalower(s[pos]))
-				s[pos] -= 32;
-		}
-		if (s[pos] == ' ' || s[pos] == 125)
-		{
-			pos++;
-			if (_isalphalower(s[pos]))
-				s[pos] -= 32;
-		}
-		if (s[pos] == '\n' || s[pos] == '\t')
-		{
-			pos++;
-			if (_isalphalower(s[pos]))
-				s[pos] -= 32;
+			if (s[i] == sym[j])
+			{
+				if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+				{
+					s[i + 1] -= 32;
+				}
+			}
 		}
 	}
+
 	return (s);
 }
