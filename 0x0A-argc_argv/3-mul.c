@@ -64,8 +64,9 @@ int main(int argc, char *argv[])
 		printf("%d\n", product);
 	}
 	else
-		{
-			printf("Error\n");
-		}
+	{
+		printf("Error\n");
+		return (1);
+	}
 	return (0);
 }
