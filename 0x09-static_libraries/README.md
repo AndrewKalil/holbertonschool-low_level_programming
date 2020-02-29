@@ -1,0 +1,1 @@
+This directory contains task for the static library task of the holberton 0x09 project
