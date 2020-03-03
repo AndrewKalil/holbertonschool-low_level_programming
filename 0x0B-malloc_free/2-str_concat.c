@@ -39,13 +39,12 @@ char *str_concat(char *s1, char *s2)
 		ptr[a] = s1[a];
 		a++;
 	}
-	j = 0;
+	i = 0;
 	while (a <= len)
 	{
-		ptr[a] = s2[j];
+		ptr[a] = s2[i];
 		a++;
-		j++;
+		i++;
 	}
 	return (ptr);
-	free(ptr);
 }
