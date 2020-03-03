@@ -2,6 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * free_grid - frees a 2 dimensional array
+ * @grid: two dimensional array
+ * @height: one dimensional array
+ */
 void free_grid(int **grid, int height)
 {
 	int i;
@@ -11,9 +16,9 @@ void free_grid(int **grid, int height)
 
 	i = 0;
 	while (i < height)
-		{
-			free(grid[i]);
-			i++;
-		}
+	{
+		free(grid[i]);
+		i++;
+	}
 	free(grid);
 }
