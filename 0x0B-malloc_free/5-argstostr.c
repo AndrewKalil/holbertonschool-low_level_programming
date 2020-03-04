@@ -24,9 +24,9 @@ char *argstostr(int ac, char **av)
 		{
 			j++;
 			len++;
-			len++;
 		}
 		i++;
+		len++;
 	}
 
 	ptr = malloc(sizeof(int) * (len + 1));
