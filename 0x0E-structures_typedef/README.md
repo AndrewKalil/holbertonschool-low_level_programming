@@ -1,0 +1,1 @@
+This repository contains files for the holberton typedef and structure project.
