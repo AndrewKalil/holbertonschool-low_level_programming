@@ -1,0 +1,1 @@
+This repository holds files for the 0x0E-preprocessor project of Holberton School.
