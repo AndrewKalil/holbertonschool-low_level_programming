@@ -3,9 +3,11 @@
 #include "function_pointers.h"
 
 /**
- *
- *
- *
+ * int_index - searches for integer
+ * @array: array of integers
+ * @size: number of elements in the array
+ * @cmp: function that searches for integer
+ * Return: i which is the index or -1 if not found
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
