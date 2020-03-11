@@ -1,0 +1,1 @@
+This directory contains tasks for the Holbertonschool-low_level_programming 0x0F-function_pointers project.
