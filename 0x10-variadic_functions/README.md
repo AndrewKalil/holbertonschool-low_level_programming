@@ -1,0 +1,1 @@
+"This directory contains functions for variadic functions prject of Holberton School"
