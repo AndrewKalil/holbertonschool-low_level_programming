@@ -1,7 +1,9 @@
 #include "variadic_functions.h"
 
 /**
- *
+ * sum_them_all - sums all arguements
+ * @n: number of arguements being inputted
+ * Return: sum of all numers
  */
 int sum_them_all(const unsigned int n, ...)
 {
