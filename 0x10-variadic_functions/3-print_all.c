@@ -1,7 +1,8 @@
 #include "variadic_functions.h"
 
 /**
- *
+ * print_all - prints any kind of arguemnts being passed on
+ * @format: list of arguement types
  */
 void print_all(const char * const format, ...)
 {
@@ -18,19 +19,19 @@ void print_all(const char * const format, ...)
 			switch (format[i])
 			{
 			case 'c':
-				printf ("%s%c", separator, va_arg(ap, int));
+				printf("%s%c", separator, va_arg(ap, int));
 				break;
 			case 'i':
-				printf ("%s%i", separator, va_arg(ap, int));
+				printf("%s%i", separator, va_arg(ap, int));
 				break;
 			case 'f':
-				printf ("%s%f", separator, va_arg(ap, double));
+				printf("%s%f", separator, va_arg(ap, double));
 				break;
 			case 's':
 				s = va_arg(ap, char *);
 				if (s == NULL)
 					s = "(nil)";
-				printf ("%s%s", separator, s);
+				printf("%s%s", separator, s);
 				break;
 			default:
 				i++;
@@ -41,5 +42,5 @@ void print_all(const char * const format, ...)
 		}
 	}
 	va_end(ap);
-	printf ("\n");
+	printf("\n");
 }
