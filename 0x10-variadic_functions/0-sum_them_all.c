@@ -3,7 +3,7 @@
 /**
  * sum_them_all - sums all arguements
  * @n: number of arguements being inputted
- * Return: sum of all numers
+ * Return: sum of all numbers
  */
 int sum_them_all(const unsigned int n, ...)
 {
@@ -11,7 +11,7 @@ int sum_them_all(const unsigned int n, ...)
 	unsigned int i = 0, sum = 0;
 
 	if (n == 0)
-		return 0;
+		return (0);
 
 	va_start(ap, n);
 
