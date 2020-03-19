@@ -1,4 +1,7 @@
 #include "lists.h"
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * _strlen - returns a string
