@@ -27,8 +27,11 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		free(tmp);
 		return (1);
 	}
-	for (i = 0; (tmp || tmp->next) && i < index - 1; i++)
+	for (i = 0; i < index - 1; i++)
 	{
+		if (!(tmp || tmp->next))
+			return (-1);
+
 		tmp = tmp->next;
 	}
 	atm = tmp->next;
