@@ -3,7 +3,7 @@
 ## Operands
   * AND (&)
   * OR (|)
-  *NOT (~)
+  * NOT (~)
   * Shift left (<<)
   * Shift right (>>)
   * OR (^)
