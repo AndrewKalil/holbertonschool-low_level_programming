@@ -4,8 +4,8 @@
 #include "holberton.h"
 
 /**
- * main - copies the content of a file to another file
- * @argc: number of arguments passed to the program
+ * main - copies the content of a file-from to file_to file
+ * @argc: number of arguments
  * @argv: array of arguments
  *
  * Return: Always 0 (Success)
