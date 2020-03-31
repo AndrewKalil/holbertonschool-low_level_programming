@@ -12,9 +12,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int fd_from, fd_to;
+	int fd_from, fd_to, num, err1, err2;
 	char buf[BUFSIZ];
-	int num, err1, err2;
 
 	if (argc != 3)
 	{
