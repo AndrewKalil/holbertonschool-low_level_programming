@@ -4,7 +4,11 @@
 #include "holberton.h"
 
 /**
- *
+ * read_textfile - reads a text file and prints it to the POSIX standard
+ * output
+ * @filename: name of file that will be read
+ * @letters: letter count
+ * Return: number of chars
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
@@ -18,7 +22,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
+	{
 		return (0);
+	}
 	else
 	{
 		num = read(fd, buf, letters);
