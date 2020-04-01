@@ -6,7 +6,7 @@
 /**
  * create_file - creates a file
  * @filename: name of file to be created
- * @text_contect: string to be inputted into new file
+ * @text_content: string to be inputted into new file
  * Return: 1 for success and -1 for failure
  */
 int create_file(const char *filename, char *text_content)
@@ -29,6 +29,6 @@ int create_file(const char *filename, char *text_content)
 		if (num != i)
 			return (-1);
 	}
-	close (fd);
+	close(fd);
 	return (1);
 }
