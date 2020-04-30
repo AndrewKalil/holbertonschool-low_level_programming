@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_dnodeint - adds a node at the beginneing of the list
+ * add_dnodeint_end - adds a node at the beginneing of the list
  * @head: pointer to a pointer to the head
  * @n: int variable containing data to be stored
  * Return: pointer to the new node
