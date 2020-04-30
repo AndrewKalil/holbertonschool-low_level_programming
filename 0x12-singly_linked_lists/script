@@ -1,0 +1,11 @@
+#!/bin/bash
+function header {
+        name_upper=${1^^}
+        name_header=${name_upper/./_}
+        echo ${1};
+        echo '#ifndef' ${name_header} >> $1;
+        echo '#define' ${name_header} >> $1;
+        echo               >> $1;
+        echo '#endif'      >> $1;
+}
+header $1;
