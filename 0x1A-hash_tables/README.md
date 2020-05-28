@@ -1,6 +1,6 @@
-# Hash Tables 
+# Hash Tables :symbols:
 
-## Files
+## Files :page_facing_up:
  * 0-hash_table_create.c 
  * 1-djb2.c 
  * 2-key_index.c 
@@ -9,5 +9,5 @@
  * 5-hash_table_print.c 
  * 6-hash_table_delete.c
 
- ### Author: Andrew Kalil Ortiz
+ ### Author: Andrew Kalil Ortiz :pencil2:
  ### Follow me on [twitter](https://twitter.com/AndrewKalil1)
