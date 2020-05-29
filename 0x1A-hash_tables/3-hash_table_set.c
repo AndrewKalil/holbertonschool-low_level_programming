@@ -9,12 +9,13 @@
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned long int idx = key_index((const unsigned char *)key, ht->size);
+	unsigned long int idx;
 	hash_node_t *bucket = NULL, *ptr = NULL;
 
 	if (ht == NULL || key == NULL || strlen(key) == 0)
 		return (0);
 
+	idx = key_index((const unsigned char *)key, ht->size);
 	ptr = ht->array[idx];
 	while (ptr)
 	{
