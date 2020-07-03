@@ -1,7 +1,17 @@
 #!/usr/bin/python3
+"""Perimeter of an Island
+"""
 
 
 def island_perimeter(grid):
+    """Function that finds the perimeter of an island
+
+    Args:
+        grid (list): 2d array of integers where 1 is land and 0 is water
+
+    Returns:
+        int: perimeter of the 'island'
+    """
     count = 0
     for i in range(len(grid)):
         for j in range(len(grid[i])):
