@@ -27,7 +27,7 @@ void print_array(int *array, int lo, int hi)
  * @lo: lowest number in array
  * @hi: highest number in array
  * @value: number in search
- * Retrun: index of value found
+ * Return: index of value found
  */
 int search(int *array, int lo, int hi, int value)
 {
@@ -40,9 +40,9 @@ int search(int *array, int lo, int hi, int value)
 		return (mid);
 
 	if (array[mid] > value)
-		return (search(array, lo, mid-1, value));
+		return (search(array, lo, mid - 1, value));
 	else
-		return (search(array, mid+1, hi, value));
+		return (search(array, mid + 1, hi, value));
 }
 
 /**
@@ -60,5 +60,5 @@ int binary_search(int *array, size_t size, int value)
 	if (size == 0 || !array)
 		return (-1);
 
-	return (search(array, lo, hi-1, value));
+	return (search(array, lo, hi - 1, value));
 }
